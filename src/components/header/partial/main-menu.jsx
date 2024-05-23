@@ -3,6 +3,7 @@ import React from 'react';
 import { mainMenu } from '../data/mainMenu'; 
 import { useParams } from 'react-router-dom'; 
 import ALink from '../../features/custom-link';
+import menuBanner from './images/image.png'
 function MainMenu() {
     
     const history = useParams();
@@ -10,7 +11,7 @@ function MainMenu() {
 
     return (
         <nav className="main-nav">
-            <ul className="menu">
+            <ul className="menu menu-active-underline">
                 <li id="menu-home" className={ pathname === '/' ? 'active' : '' }>
                     <ALink href='/'>Home</ALink>
                 </li>
@@ -53,7 +54,7 @@ function MainMenu() {
                             </div>
                             <div className="col-6 col-sm-4 col-md-3 col-lg-4 menu-banner menu-banner1 banner banner-fixed">
                                 <figure>
-                                    <img src="./images/menu/banner-1.jpg" alt="Menu banner" width="221" height="330" />
+                                    <img src={menuBanner} alt="Menu banner" width="221" height="330" />
                                 </figure>
                                 <div className="banner-content y-50">
                                     <h4 className="banner-subtitle font-weight-bold text-primary ls-m">Sale.
@@ -68,7 +69,7 @@ function MainMenu() {
                 </li>
 
                 <li className={ `submenu  ${ pathname.includes( '/product' ) && !pathname.includes( '/elements' ) ? 'active' : '' }` }>
-                    <ALink href="/product/default/fashionable-leather-satchel">Products</ALink>
+                    <ALink href="/product/default/beyond-riode-original-t-shirt">Products</ALink>
 
                     <div className="megamenu">
                         <div className="row">
@@ -106,7 +107,7 @@ function MainMenu() {
 
                             <div className="col-6 col-sm-4 col-md-3 col-lg-4 menu-banner menu-banner2 banner banner-fixed">
                                 <figure>
-                                    <img src="./images/menu/banner-2.jpg" alt="Menu banner" width="221" height="330" />
+                                    <img src={menuBanner} alt="Menu banner" width="221" height="330" />
                                 </figure>
                                 <div className="banner-content x-50 text-center">
                                     <h3 className="banner-title text-white text-uppercase">Sunglasses</h3>
@@ -118,7 +119,7 @@ function MainMenu() {
                 </li>
 
                 <li className={ `submenu  ${ pathname.includes( '/pages' ) ? 'active' : '' }` }>
-                    <ALink href="#">Pages</ALink>
+                    <ALink href={ '/pages/about-us' }>Pages</ALink>
 
                     <ul>
                         {

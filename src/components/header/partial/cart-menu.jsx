@@ -34,7 +34,7 @@ function CartMenu(props) {
                     <span className="cart-name">Shopping Cart:</span>
                     <span className="cart-price">${totalPrice}</span>
                 </div>
-                <i class="fa-solid fa-basket-shopping"><span className="cart-count">{cartCount}</span></i>
+                <i className="d-icon-bag"><span className="cart-count">{cartCount}</span></i>
             </a>
             <div className="cart-overlay" onClick={hideCartMenu}></div>
             <div className="dropdown-box">
