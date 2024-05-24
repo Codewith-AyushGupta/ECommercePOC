@@ -1,5 +1,4 @@
 import React from "react";
-import { ReactNode, CSSProperties, MouseEvent } from "react";
 export default function ALink({ children, className, content, style, href, onClick }) {
 
     const preventDefault = (e) => {

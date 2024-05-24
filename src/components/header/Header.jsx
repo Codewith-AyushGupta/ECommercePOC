@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import ALink from '../features/custom-link';
-import CartMenu from './partial/cart-menu';
-import MainMenu from './partial/main-menu';
-import SearchForm from './partial/Search-box';
+import CartMenu from '../partial/cart-menu';
+import MainMenu from '../partial/main-menu';
+import SearchForm from '../partial/Search-box';
 import { headerBorderRemoveList } from './data/menu';
 import logo from './images/logo.png'
 import LoginModal from '../login/login-modal'

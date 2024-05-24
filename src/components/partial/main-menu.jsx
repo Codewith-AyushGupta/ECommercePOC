@@ -1,8 +1,8 @@
 import React from 'react';
 // import { Link } from 'react-router-dom'; 
-import { mainMenu } from '../data/mainMenu'; 
+import { mainMenu } from '../header/data/mainMenu'; 
 import { useParams } from 'react-router-dom'; 
-import ALink from '../../features/custom-link';
+import ALink from '../features/custom-link';
 import menuBanner from './images/image.png'
 function MainMenu() {
     
