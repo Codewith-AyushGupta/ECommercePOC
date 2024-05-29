@@ -1,15 +1,12 @@
 import React from 'react'
 import ALink from '../features/custom-link'
 import { Helmet } from 'react-helmet'
-import Header from '../header/Header'
-import Footer from '../footer/Footer'
 import errorImg from './images/404.png'
 function Error404() {
   return (
     <main className="main">
-            <Header/>
             <Helmet>
-                <title>Riode React eCommerce Template | 404</title>
+                <title>Page Not Found</title>
             </Helmet>
 
             <h1 className="d-none">Riode React eCommerce Template - 404</h1>
@@ -24,7 +21,6 @@ function Error404() {
                     <ALink href="/" className="btn btn-primary customAddBtnColor btn-rounded mb-4">Go home</ALink>
                 </section>
             </div>
-            <Footer/>
         </main >
   )
 }
