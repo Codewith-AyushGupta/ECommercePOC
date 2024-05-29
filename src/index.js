@@ -7,19 +7,31 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Contact from './components/footer/Contact/Contact';
 import Error404 from './components/Error/404';
+import ProductHome from '..//src/product/simple/productHome'
 // import Header from './components/header/Header';
 import Layout from './components/Layout';
+import { Provider } from 'react-redux';
+import Wishlist from './Pages/Pages/Wishlist';
 // import Footer from './components/footer/Footer';
+import { store, persistor } from '..//src/product/store/index'
+import { wrapper } from '..//src/product/store/index'
+import Cart from './components/pages/cart';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Router>
-      <Routes>
-        <Route path="/" element={<Layout />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="*" element={<Error404 />} />
-      </Routes>
-    </Router>
+    <Provider store={store}>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Layout/>} />
+          <Route path="/contact" element={<Layout children={<Contact />}/>} />
+          <Route path="/product/default/sample" element={<Layout children={<ProductHome/>}/>} />
+          <Route path="/pages/cart" element={<Cart />} />
+          <Route path="/pages/wishlist" element={<Layout children={<Wishlist/>}/>} />
+          <Route path="*" element={<Error404 />} />
+          {/* <wrapper/> */}
+        </Routes>
+      </Router>
+    </Provider>
   </React.StrictMode>
 );
 

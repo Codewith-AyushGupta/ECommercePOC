@@ -1,0 +1,440 @@
+[
+    {
+        "name": "Classic Running Shoes",
+        "slug": "classic-running-shoes",
+        "price": 59.99,
+        "ratings": 4.5,
+        "reviews": 145,
+        "stock": 25,
+        "short_description": "Lightweight running shoes perfect for daily jogs.",
+        "is_featured": true,
+        "is_new": false,
+        "until": null,
+        "discount": 10,
+        "pictures":["https://i5.walmartimages.com/asr/40ad87f2-5050-42f2-998b-a6f288fcba10.e7231b55a343db24801a916b3d89cc36.jpeg"],
+        "product": [
+            {
+                "large_pictures": ["https://i5.walmartimages.com/asr/40ad87f2-5050-42f2-998b-a6f288fcba10.e7231b55a343db24801a916b3d89cc36.jpeg"],
+                "width": 800,
+                "height": 800
+            }
+        ],
+        "small_pictures": [
+            {
+                "large_pictures": "https://i5.walmartimages.com/asr/40ad87f2-5050-42f2-998b-a6f288fcba10.e7231b55a343db24801a916b3d89cc36.jpeg",
+                "width": 300,
+                "height": 300
+            }
+        ],
+        "categories": [
+            {
+                "name": "Running",
+                "slug": "running"
+            }
+        ],
+        "variants": [
+            {
+                "price": 59.99,
+                "sale_price": 53.99
+            }
+        ],
+        "brands": [
+            {
+                "price": 59.99,
+                "sale_price": 53.99
+            }
+        ]
+    },
+    {
+        "name": "Trail Blazer Sneakers",
+        "slug": "trail-blazer-sneakers",
+        "price": 79.99,
+        "ratings": 4.7,
+        "reviews": 97,
+        "stock": 40,
+        "short_description": "Durable sneakers designed for rough terrains.",
+        "is_featured": false,
+        "is_new": true,
+        "until": "2024-06-30",
+        "discount": 15,
+        "product": [
+            {
+                "large_pictures": "https://i5.walmartimages.com/asr/40ad87f2-5050-42f2-998b-a6f288fcba10.e7231b55a343db24801a916b3d89cc36.jpeg",
+                "width": 800,
+                "height": 800
+            }
+        ],
+        "small_pictures": [
+            {
+                "large_pictures": "https://i5.walmartimages.com/asr/40ad87f2-5050-42f2-998b-a6f288fcba10.e7231b55a343db24801a916b3d89cc36.jpeg",
+                "width": 300,
+                "height": 300
+            }
+        ],
+        "categories": [
+            {
+                "name": "Hiking",
+                "slug": "hiking"
+            }
+        ],
+        "variants": [
+            {
+                "price": 79.99,
+                "sale_price": 67.99
+            }
+        ]
+    },
+    {
+        "name": "Urban Street Shoes",
+        "slug": "urban-street-shoes",
+        "price": 69.99,
+        "ratings": 4.3,
+        "reviews": 210,
+        "stock": 10,
+        "short_description": "Stylish shoes perfect for everyday city wear.",
+        "is_featured": true,
+        "is_new": true,
+        "until": "2024-07-15",
+        "discount": 5,
+        "product": [
+            {
+                "large_pictures": "https://i5.walmartimages.com/asr/40ad87f2-5050-42f2-998b-a6f288fcba10.e7231b55a343db24801a916b3d89cc36.jpeg",
+                "width": 800,
+                "height": 800
+            }
+        ],
+        "small_pictures": [
+            {
+                "large_pictures": "https://i5.walmartimages.com/asr/40ad87f2-5050-42f2-998b-a6f288fcba10.e7231b55a343db24801a916b3d89cc36.jpeg",
+                "width": 300,
+                "height": 300
+            }
+        ],
+        "categories": [
+            {
+                "name": "Casual",
+                "slug": "casual"
+            }
+        ],
+        "variants": [
+            {
+                "price": 69.99,
+                "sale_price": 66.49
+            }
+        ]
+    },
+    {
+        "name": "Vintage Leather Boots",
+        "slug": "vintage-leather-boots",
+        "price": 129.99,
+        "ratings": 4.8,
+        "reviews": 56,
+        "stock": 5,
+        "short_description": "Premium leather boots with a classic design.",
+        "is_featured": false,
+        "is_new": false,
+        "until": null,
+        "discount": 20,
+        "product": [
+            {
+                "large_pictures": "https://i5.walmartimages.com/asr/40ad87f2-5050-42f2-998b-a6f288fcba10.e7231b55a343db24801a916b3d89cc36.jpeg",
+                "width": 800,
+                "height": 800
+            }
+        ],
+        "small_pictures": [
+            {
+                "large_pictures": "https://i5.walmartimages.com/asr/40ad87f2-5050-42f2-998b-a6f288fcba10.e7231b55a343db24801a916b3d89cc36.jpeg",
+                "width": 300,
+                "height": 300
+            }
+        ],
+        "categories": [
+            {
+                "name": "Boots",
+                "slug": "boots"
+            }
+        ],
+        "variants": [
+            {
+                "price": 129.99,
+                "sale_price": 103.99
+            }
+        ]
+    },
+    {
+        "name": "Elegant Evening Heels",
+        "slug": "elegant-evening-heels",
+        "price": 89.99,
+        "ratings": 4.9,
+        "reviews": 34,
+        "stock": 20,
+        "short_description": "Sophisticated heels perfect for evening wear.",
+        "is_featured": true,
+        "is_new": true,
+        "until": "2024-12-31",
+        "discount": 25,
+        "product": [
+            {
+                "large_pictures": "https://i5.walmartimages.com/asr/40ad87f2-5050-42f2-998b-a6f288fcba10.e7231b55a343db24801a916b3d89cc36.jpeg",
+                "width": 800,
+                "height": 800
+            }
+        ],
+        "small_pictures": [
+            {
+                "large_pictures": "https://i5.walmartimages.com/asr/40ad87f2-5050-42f2-998b-a6f288fcba10.e7231b55a343db24801a916b3d89cc36.jpeg",
+                "width": 300,
+                "height": 300
+            }
+        ],
+        "categories": [
+            {
+                "name": "Formal",
+                "slug": "formal"
+            }
+        ],
+        "variants": [
+            {
+                "price": 89.99,
+                "sale_price": 67.49
+            }
+        ]
+    },
+    {
+        "name": "Comfortable Walking Shoes",
+        "slug": "comfortable-walking-shoes",
+        "price": 49.99,
+        "ratings": 4.2,
+        "reviews": 88,
+        "stock": 30,
+        "short_description": "Perfect shoes for long walks and daily errands.",
+        "is_featured": false,
+        "is_new": false,
+        "until": null,
+        "discount": 0,
+        "product": [
+            {
+                "large_pictures": "https://i5.walmartimages.com/asr/40ad87f2-5050-42f2-998b-a6f288fcba10.e7231b55a343db24801a916b3d89cc36.jpeg",
+                "width": 800,
+                "height": 800
+            }
+        ],
+        "small_pictures": [
+            {
+                "large_pictures": "https://i5.walmartimages.com/asr/40ad87f2-5050-42f2-998b-a6f288fcba10.e7231b55a343db24801a916b3d89cc36.jpeg",
+                "width": 300,
+                "height": 300
+            }
+        ],
+        "categories": [
+            {
+                "name": "Walking",
+                "slug": "walking"
+            }
+        ],
+        "variants": [
+            {
+                "price": 49.99,
+                "sale_price": null
+            }
+        ]
+    },
+    {
+        "name": "Sporty Kids Sneakers",
+        "slug": "sporty-kids-sneakers",
+        "price": 39.99,
+        "ratings": 4.6,
+        "reviews": 50,
+        "stock": 60,
+        "short_description": "Comfortable and stylish sneakers for kids.",
+        "is_featured": true,
+        "is_new": false,
+        "until": null,
+        "discount": 10,
+        "product": [
+            {
+                "large_pictures": "https://i5.walmartimages.com/asr/40ad87f2-5050-42f2-998b-a6f288fcba10.e7231b55a343db24801a916b3d89cc36.jpeg",
+                "width": 800,
+                "height": 800
+            }
+        ],
+        "small_pictures": [
+            {
+                "large_pictures": "https://i5.walmartimages.com/asr/40ad87f2-5050-42f2-998b-a6f288fcba10.e7231b55a343db24801a916b3d89cc36.jpeg",
+                "width": 300,
+                "height": 300
+            }
+        ],
+        "categories": [
+            {
+                "name": "Kids",
+                "slug": "kids"
+            }
+        ],
+        "variants": [
+            {
+                "price": 39.99,
+                "sale_price": 35.99
+            }
+        ]
+    },
+    {
+        "name": "Designer High Heels",
+        "slug": "designer-high-heels",
+        "price": 149.99,
+        "ratings": 4.9,
+        "reviews": 24,
+        "stock": 12,
+        "short_description": "Exquisite high heels for a touch of elegance.",
+        "is_featured": false,
+        "is_new": true,
+        "until": "2024-09-30",
+        "discount": 30,
+        "product": [
+            {
+                "large_pictures": "https://i5.walmartimages.com/asr/40ad87f2-5050-42f2-998b-a6f288fcba10.e7231b55a343db24801a916b3d89cc36.jpeg",
+                "width": 800,
+                "height": 800
+            }
+        ],
+        "small_pictures": [
+            {
+                "large_pictures": "https://i5.walmartimages.com/asr/40ad87f2-5050-42f2-998b-a6f288fcba10.e7231b55a343db24801a916b3d89cc36.jpeg",
+                "width": 300,
+                "height": 300
+            }
+        ],
+        "categories": [
+            {
+                "name": "Formal",
+                "slug": "formal"
+            }
+        ],
+        "variants": [
+            {
+                "price": 149.99,
+                "sale_price": 104.99
+            }
+        ]
+    },
+    {
+        "name": "Casual Slip-On Shoes",
+        "slug": "casual-slip-on-shoes",
+        "price": 44.99,
+        "ratings": 4.1,
+        "reviews": 110
+
+,
+        "stock": 15,
+        "short_description": "Easy to wear slip-on shoes for everyday comfort.",
+        "is_featured": false,
+        "is_new": false,
+        "until": null,
+        "discount": 5,
+        "product": [
+            {
+                "large_pictures": "https://i5.walmartimages.com/asr/40ad87f2-5050-42f2-998b-a6f288fcba10.e7231b55a343db24801a916b3d89cc36.jpeg",
+                "width": 800,
+                "height": 800
+            }
+        ],
+        "small_pictures": [
+            {
+                "large_pictures": "https://i5.walmartimages.com/asr/40ad87f2-5050-42f2-998b-a6f288fcba10.e7231b55a343db24801a916b3d89cc36.jpeg",
+                "width": 300,
+                "height": 300
+            }
+        ],
+        "categories": [
+            {
+                "name": "Casual",
+                "slug": "casual"
+            }
+        ],
+        "variants": [
+            {
+                "price": 44.99,
+                "sale_price": 42.74
+            }
+        ]
+    },
+    {
+        "name": "Luxury Leather Loafers",
+        "slug": "luxury-leather-loafers",
+        "price": 199.99,
+        "ratings": 5.0,
+        "reviews": 12,
+        "stock": 8,
+        "short_description": "Handcrafted leather loafers for a refined look.",
+        "is_featured": true,
+        "is_new": true,
+        "until": "2024-08-31",
+        "discount": 35,
+        "product": [
+            {
+                "large_pictures": "https://i5.walmartimages.com/asr/40ad87f2-5050-42f2-998b-a6f288fcba10.e7231b55a343db24801a916b3d89cc36.jpeg",
+                "width": 800,
+                "height": 800
+            }
+        ],
+        "small_pictures": [
+            {
+                "large_pictures": "https://i5.walmartimages.com/asr/40ad87f2-5050-42f2-998b-a6f288fcba10.e7231b55a343db24801a916b3d89cc36.jpeg",
+                "width": 300,
+                "height": 300
+            }
+        ],
+        "categories": [
+            {
+                "name": "Formal",
+                "slug": "formal"
+            }
+        ],
+        "variants": [
+            {
+                "price": 199.99,
+                "sale_price": 129.99
+            }
+        ]
+    },
+    {
+        "name": "Athletic Cross Trainers",
+        "slug": "athletic-cross-trainers",
+        "price": 89.99,
+        "ratings": 4.4,
+        "reviews": 75,
+        "stock": 20,
+        "short_description": "Versatile trainers suitable for various sports.",
+        "is_featured": false,
+        "is_new": true,
+        "until": "2024-10-31",
+        "discount": 10,
+        "product": [
+            {
+                "large_pictures": "https://i5.walmartimages.com/asr/40ad87f2-5050-42f2-998b-a6f288fcba10.e7231b55a343db24801a916b3d89cc36.jpeg",
+                "width": 800,
+                "height": 800
+            }
+        ],
+        "small_pictures": [
+            {
+                "large_pictures": "https://i5.walmartimages.com/asr/40ad87f2-5050-42f2-998b-a6f288fcba10.e7231b55a343db24801a916b3d89cc36.jpeg",
+                "width": 300,
+                "height": 300
+            }
+        ],
+        "categories": [
+            {
+                "name": "Training",
+                "slug": "training"
+            }
+        ],
+        "variants": [
+            {
+                "price": 89.99,
+                "sale_price": 80.99
+            }
+        ]
+    }
+]

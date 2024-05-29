@@ -1,0 +1,104 @@
+{
+    "data": {
+          "id": "1",
+          "slug": "Nike SB x Air Jordan 4 Retro",
+          "name": "Nike SB x Air Jordan 4 Retro",
+          "price": [500,500],
+          "discount": 10,
+          "short_description": "This is a dummy product.",
+          "sku": "DUM-PRO-001",
+          "stock": 1000,
+          "ratings": 4.5,
+          "reviews": 25,
+          "sale_count": 150,
+          "is_new": true,
+          "is_top": true,
+          "until": "2023-01-01T00:00:00Z",
+          "pictures": [
+            {
+              "url": "https://i5.walmartimages.com/asr/40ad87f2-5050-42f2-998b-a6f288fcba10.e7231b55a343db24801a916b3d89cc36.jpeg",
+              "width": 600,
+              "height": 400
+            },
+            {
+              "url": "https://i5.walmartimages.com/asr/40ad87f2-5050-42f2-998b-a6f288fcba10.e7231b55a343db24801a916b3d89cc36.jpeg",
+              "width": 600,
+              "height": 400
+            }
+          ],
+          "small_pictures": [
+            {
+              "url": "https://i5.walmartimages.com/asr/40ad87f2-5050-42f2-998b-a6f288fcba10.e7231b55a343db24801a916b3d89cc36.jpeg",
+              "width": 300,
+              "height": 200
+            },
+            {
+              "url": "https://i5.walmartimages.com/asr/40ad87f2-5050-42f2-998b-a6f288fcba10.e7231b55a343db24801a916b3d89cc36.jpeg",
+              "width": 300,
+              "height": 200
+            }
+          ],
+          "large_pictures": [
+            {
+              "url": "https://i5.walmartimages.com/asr/40ad87f2-5050-42f2-998b-a6f288fcba10.e7231b55a343db24801a916b3d89cc36.jpeg",
+              "width": 1200,
+              "height": 800
+            },
+            {
+              "url": "https://i5.walmartimages.com/asr/40ad87f2-5050-42f2-998b-a6f288fcba10.e7231b55a343db24801a916b3d89cc36.jpeg",
+              "width": 1200,
+              "height": 800
+            }
+          ],
+          "categories": [
+            {
+              "name": "Electronics",
+              "slug": "electronics"
+            },
+            {
+              "name": "Gadgets",
+              "slug": "gadgets"
+            }
+          ],
+          "tags": [
+            {
+              "name": "Smartphone",
+              "slug": "smartphone"
+            },
+            {
+              "name": "Android",
+              "slug": "android"
+            }
+          ],
+          "brands": [
+            {
+              "name": "Brand X",
+              "slug": "brand-x"
+            }
+          ],
+          "variants": [
+            {
+              "price": [500],
+              "sale_price": 450,
+              "color": {
+                "name": "Black",
+                "color": "#000000",
+                "thumb": {
+                  "url": "https://i5.walmartimages.com/asr/40ad87f2-5050-42f2-998b-a6f288fcba10.e7231b55a343db24801a916b3d89cc36.jpeg",
+                  "width": 100,
+                  "height": 100
+                }
+              },
+              "size": {
+                "name": "Large",
+                "size": "L",
+                "thumb": {
+                  "url": "https://i5.walmartimages.com/asr/40ad87f2-5050-42f2-998b-a6f288fcba10.e7231b55a343db24801a916b3d89cc36.jpeg",
+                  "width": 100,
+                  "height": 100
+                }
+              }
+            }
+          ] 
+    }
+}

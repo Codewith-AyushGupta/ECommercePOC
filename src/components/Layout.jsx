@@ -10,7 +10,9 @@ import { useLocation } from 'react-router-dom';
 import ALink from './features/custom-link';
 import MobileMenu from './partial/mobile-menu';
 import  { showScrollTopHandler, scrollTopHandler, stickyHeaderHandler, stickyFooterHandler, resizeHandler } from '..//utils/index'
-function Layout() {
+import { modalActions } from '../product/store/modalReducer';
+import { connect } from 'react-redux';
+function Layout({ children, closeQuickview }) {
     const location = useLocation();
 
     useLayoutEffect(() => {
@@ -50,7 +52,7 @@ function Layout() {
         <>
         <div className="page-wrapper">
             <Header/>
-                {/* {Children} */}
+            { children }
             <Footer />
             <StickyFooter />
         </div>
@@ -70,4 +72,4 @@ function Layout() {
     )
 }
 
-export default Layout
+export default connect( null, { closeQuickview: modalActions.closeQuickview } )( Layout );

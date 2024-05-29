@@ -67,19 +67,19 @@ export const mainMenu = {
         "pages": [
             {
                 "title": "Simple Product",
-                "url": "product/default/fashionable-overnight-bag"
+                "url": "product/default/sample"
             },
             {
                 "title": "Variable Product",
-                "url": "product/default/cavin-fashion-suede-handbag"
+                "url": "product/default/best-dark-blue-pedestrian-bag"
             },
             {
                 "title": "Sale Product",
-                "url": "product/default/mackintosh-poket-backpack"
+                "url": "product/default/fashionable-leather-satchel"
             },
             {
                 "title": "Feature & On Sale",
-                "url": "product/default/cavin-klein-fashion-sheepskin-handbag"
+                "url": "product/default/sports-tops"
             },
             {
                 "title": "With Left Sidebar",
@@ -142,7 +142,7 @@ export const mainMenu = {
         },
         {
             "title": "Contact Us",
-            "url": "contact"
+            "url": "pages/contact-us"
         },
         {
             "title": "My Account",
@@ -368,7 +368,6 @@ export const elementsList = [
 
 export const headerBorderRemoveList = [
     "/",
-    "/shop",
     "/shop/infinite-scroll",
     "/shop/horizontal-filter",
     "/shop/navigation-filter",

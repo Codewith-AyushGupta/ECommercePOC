@@ -94,11 +94,11 @@ function LoginModal() {
                                     <TabPanel className="tab-pane">
                                         <form action="#">
                                             <div className="form-group">
-                                                <label htmlFor="singin-email">Your email address:</label>
+                                                {/* <label htmlFor="singin-email">Your email address:</label> */}
                                                 <input type="email" className="form-control" id="register-email" name="register-email" placeholder="Your Email address *" required />
                                             </div>
                                             <div className="form-group">
-                                                <label htmlFor="singin-password">Password:</label>
+                                                {/* <label htmlFor="singin-password">Password:</label> */}
                                                 <input type="password" className="form-control" id="register-password" name="register-password" placeholder="Password *" required />
                                             </div>
                                             <div className="form-footer">
