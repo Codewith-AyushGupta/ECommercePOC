@@ -25,7 +25,7 @@ root.render(
           <Route path="/" element={<Layout/>} />
           <Route path="/contact" element={<Layout children={<Contact />}/>} />
           <Route path="/product/default/sample" element={<Layout children={<ProductHome/>}/>} />
-          <Route path="/pages/cart" element={<Cart />} />
+          <Route path="/pages/cart" element={<Layout children={<Cart/>} />} />
           <Route path="/pages/wishlist" element={<Layout children={<Wishlist/>}/>} />
           <Route path="*" element={<Layout children={<Error404/>} />} />
           {/* <wrapper/> */}
