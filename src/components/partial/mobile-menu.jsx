@@ -75,7 +75,7 @@ function MobileMenu(props) {
                     </li>
 
                     <li>
-                        <Card title="categories" type="mobile" url="/shop">
+                        {/* <Card title="categories" type="mobile" url="/shop">
                             <ul>
                                 <li>
                                     <Card title="Variations 1" type="mobile">
@@ -110,11 +110,12 @@ function MobileMenu(props) {
                                     </Card>
                                 </li>
                             </ul>
-                        </Card>
+                        </Card> */}
                     </li>
-
-                    <li>
-                        <Card title="Products" type="mobile" url="/product/default/beyond-riode-original-t-shirt">
+                    <li><ALink href="/product/default/sample">Products</ALink></li>
+                        
+                    {/* <li>
+                        <Card title="Products" type="mobile" url="/product/default/sample">
                             <ul>
                                 <li>
                                     <Card title="Product Pages" type="mobile">
@@ -151,9 +152,9 @@ function MobileMenu(props) {
                                 </li>
                             </ul>
                         </Card>
-                    </li>
+                    </li> */}
 
-                    <li>
+                    {/* <li>
                         <Card title="Pages" type="mobile" url="/pages/about-us">
                             <ul>
                                 {
@@ -168,9 +169,9 @@ function MobileMenu(props) {
                                 }
                             </ul>
                         </Card>
-                    </li>
+                    </li> */}
 
-                    <li>
+                    {/* <li>
                         <Card title="Blog" type="mobile" url="/blog/classic">
                             <ul>
                                 {
@@ -201,9 +202,9 @@ function MobileMenu(props) {
                                 }
                             </ul>
                         </Card>
-                    </li>
+                    </li> */}
 
-                    <li>
+                    {/* <li>
                         <Card title="elements" type="mobile" url="/elements">
                             <ul>
                                 {
@@ -217,9 +218,9 @@ function MobileMenu(props) {
                                 }
                             </ul>
                         </Card>
-                    </li>
+                    </li> */}
 
-                    <li><ALink href="/pages/about-us">About us</ALink></li>
+                    {/* <li><ALink href="/pages/about-us">About us</ALink></li> */}
                 </ul>
             </div>
         </div>

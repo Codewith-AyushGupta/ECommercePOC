@@ -5,7 +5,7 @@ import CartMenu from '../partial/cart-menu';
 import MainMenu from '../partial/main-menu';
 import SearchForm from '../partial/Search-box';
 import { headerBorderRemoveList } from './data/menu';
-import logo from './images/logo.png'
+import logo from './images/image.png'
 import LoginModal from '../login/login-modal'
 import '..//.//..//..//src/public/vendor/riode-fonts/riode-fonts.css'
 function Header() {
@@ -27,7 +27,7 @@ function Header() {
     };
     return (
         <header className="header header-border">
-            <div className="header-top">
+            {/* <div className="header-top">
                 <div className="container">
                     <div className="header-left">
                         <p className="welcome-msg">Welcome to Riode store message or remove it!</p>
@@ -59,7 +59,7 @@ function Header() {
                         <LoginModal />
                     </div>
                 </div>
-            </div>
+            </div> */}
 
             <div className="header-middle sticky-header fix-top sticky-content">
                 <div className="container">
@@ -72,11 +72,11 @@ function Header() {
                             <img src={logo} alt="logo" width="153" height="44" />
                         </ALink>
 
-                        <SearchForm />
+                        {/* <SearchForm /> */}
                     </div>
 
                     <div className="header-right">
-                        <ALink href="tel:#" className="icon-box icon-box-side">
+                        {/* <ALink href="tel:#" className="icon-box icon-box-side">
                             <div className="icon-box-icon mr-0 mr-lg-2">
                             <i className="d-icon-phone"></i>
                             </div>
@@ -84,7 +84,7 @@ function Header() {
                                 <h4 className="icon-box-title">Call Us Now:</h4>
                                 <p>0(800) 123-456</p>
                             </div>
-                        </ALink>
+                        </ALink> */}
                         <span className="divider"></span>
                         <ALink href="/pages/wishlist" className="wishlist">
                         <i className="d-icon-heart"></i>
@@ -102,10 +102,10 @@ function Header() {
                         <MainMenu />
                     </div>
 
-                    <div className="header-right">
+                    {/* <div className="header-right">
                         <ALink href="#"><i className="d-icon-card"></i>Special Offers</ALink>
                         <a href="https://d-themes.com/buynow/riodereact" className="ml-6">Buy Riode!</a>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </header >

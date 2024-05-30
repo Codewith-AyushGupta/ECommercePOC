@@ -1,8 +1,8 @@
 import React from 'react'
 import ALink from '../features/custom-link'
 import payment from '..//header/images/payment.png'
-import logo from './images/image.png'
-import img1 from './images/instagram/image.png'
+import logo from './images/GameReadyGear - White Orange.webp'
+// import img1 from './images/instagram/image.png'
 function Footer() {
     return (
         <footer className="footer">
@@ -25,7 +25,7 @@ function Footer() {
 
                         </div>
                         <div className="col-lg-8">
-                            <div className="row">
+                            {/* <div className="row">
                                 <div className="col-lg-4 col-sm-4">
                                     <div className="widget">
                                         <h4 className="widget-title">About Us</h4>
@@ -62,7 +62,7 @@ function Footer() {
                                         </ul>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
@@ -74,7 +74,7 @@ function Footer() {
                         </figure>
                     </div>
                     <div className="footer-center">
-                        <p className="copyright">Riode eCommerce &copy; 2021. All Rights Reserved</p>
+                        {/* <p className="copyright">Riode eCommerce &copy; 2021. All Rights Reserved</p> */}
                     </div>
                     <div className="footer-right">
                         <div className="social-links">

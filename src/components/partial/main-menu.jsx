@@ -15,7 +15,7 @@ function MainMenu() {
                 <li id="menu-home" className={ pathname === '/' ? 'active' : '' }>
                     <ALink href='/'>Home</ALink>
                 </li>
-
+{/* 
                 <li className={ `submenu  ${ pathname.includes( '/shop' ) ? 'active' : '' }` }>
                     <ALink href='/shop'>Categories</ALink>
 
@@ -66,12 +66,13 @@ function MainMenu() {
                             </div>
                         </div>
                     </div>
-                </li>
+                </li> */}
 
-                <li className={ `submenu  ${ pathname.includes( '/product' ) && !pathname.includes( '/elements' ) ? 'active' : '' }` }>
-                    <ALink href="/product/default/beyond-riode-original-t-shirt">Products</ALink>
+                <li className={ `  ${ pathname.includes( '/product' ) && !pathname.includes( '/elements' ) ? 'active' : '' }` }>
+                    <ALink href="/product/default/sample">Products</ALink>
+                
 
-                    <div className="megamenu">
+                    {/* <div className="megamenu">
                         <div className="row">
                             <div className="col-6 col-sm-4 col-md-3 col-lg-4">
                                 <h4 className="menu-title">Product Pages</h4>
@@ -115,9 +116,9 @@ function MainMenu() {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </li>
-
+{/* 
                 <li className={ `submenu  ${ pathname.includes( '/pages' ) ? 'active' : '' }` }>
                     <ALink href={ '/pages/about-us' }>Pages</ALink>
 
@@ -180,11 +181,11 @@ function MainMenu() {
                             ) )
                         }
                     </ul>
-                </li>
+                </li> */}
 
-                <li>
+                {/* <li>
                     <ALink href="/pages/about-us">About Us</ALink>
-                </li>
+                </li> */}
             </ul>
         </nav>
     )

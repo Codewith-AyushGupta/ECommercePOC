@@ -17,8 +17,8 @@ const DetailOne = React.memo((props)=> {
     const { data, isStickyCart = false, adClass = '', isNav = true } = props;
     const { toggleWishlist, addToCart, wishlist } = props;
 
-    const [curColor, setCurColor] = useState('null');
-    const [curSize, setCurSize] = useState('null');
+    const [curColor, setCurColor] = useState('Black');
+    const [curSize, setCurSize] = useState('Large');
     const [curIndex, setCurIndex] = useState(-1);
     const [cartActive, setCartActive] = useState(false);
     const [quantity, setQauntity] = useState(1);
@@ -124,8 +124,8 @@ const DetailOne = React.memo((props)=> {
     }
 
     const resetValueHandler = ( e ) => {
-        setCurColor( 'null' );
-        setCurSize( 'null' );
+        setCurColor( 'Black' );
+        setCurSize( 'Large' );
     }
 
     function isDisabled( color, size ) {
@@ -183,12 +183,12 @@ const DetailOne = React.memo((props)=> {
                     product.data.price[ 0 ] !== product.data.price[ 1 ] ?
                         product.data.variants.length === 0 || ( product.data.variants.length > 0 && !product.data.variants[ 0 ].price ) ?
                             <>
-                                <ins className="new-price">${ toDecimal( product.data.price[ 0 ] ) }</ins>
-                                <del className="old-price">${ toDecimal( product.data.price[ 1 ] ) }</del>
+                                <ins className="new-price">&euro;{ toDecimal( product.data.price[ 0 ] ) }</ins>
+                                <del className="old-price">&euro;{ toDecimal( product.data.price[ 1 ] ) }</del>
                             </>
                             :
-                            < del className="new-price">${ toDecimal( product.data.price[ 0 ] ) } – ${ toDecimal( product.data.price[ 1 ] ) }</del>
-                        : <ins className="new-price">${ toDecimal( product.data.price[ 0 ] ) }</ins>
+                            < del className="new-price">&euro;{ toDecimal( product.data.price[ 0 ] ) } – &euro;{ toDecimal( product.data.price[ 1 ] ) }</del>
+                        : <ins className="new-price">&euro;{ toDecimal( product.data.price[ 0 ] ) }</ins>
                 }
             </div>
 
@@ -212,47 +212,47 @@ const DetailOne = React.memo((props)=> {
                 product && product.data.variants.length > 0 ?
                     <>
                         {
-                            product.data.variants[ 0 ].color ?
-                                <div className='product-form product-variations product-color'>
-                                    <label>Color:</label>
-                                    <div className='select-box'>
-                                        <select name='color' className='form-control select-color' onChange={ setColorHandler } value={ curColor }>
-                                            <option value="null">Choose an option</option>
-                                            {
-                                                colors.map( item =>
-                                                    !isDisabled( item.name, curSize ) ?
-                                                        <option value={ item.name } key={ "color-" + item.name }>{ item.name }</option> : ''
-                                                )
-                                            }
-                                        </select>
-                                    </div>
-                                </div> : ""
+                            // product.data.variants[ 0 ].color ?
+                            //     <div className='product-form product-variations product-color'>
+                            //         <label>Color:</label>
+                            //         <div className='select-box'>
+                            //             <select name='color' className='form-control select-color' onChange={ setColorHandler } value={ curColor }>
+                            //                 <option value="null">Choose an option</option>
+                            //                 {
+                            //                     colors.map( item =>
+                            //                         !isDisabled( item.name, curSize ) ?
+                            //                             <option value={ item.name } key={ "color-" + item.name }>{ item.name }</option> : ''
+                            //                     )
+                            //                 }
+                            //             </select>
+                            //         </div>
+                            //     </div> : ""
                         }
 
                         {
-                            product.data.variants[ 0 ].size ?
-                                <div className='product-form product-variations product-size mb-0 pb-2'>
-                                    <label>Size:</label>
-                                    <div className='product-form-group'>
-                                        <div className='select-box'>
-                                            <select name='size' className='form-control select-size' onChange={ setSizeHandler } value={ curSize }>
-                                                <option value="null">Choose an option</option>
-                                                {
-                                                    sizes.map( item =>
-                                                        !isDisabled( curColor, item.name ) ?
-                                                            <option value={ item.name } key={ "size-" + item.name }>{ item.name }</option> : ''
-                                                    )
-                                                }
-                                            </select>
-                                        </div>
+                            // product.data.variants[ 0 ].size ?
+                            //     <div className='product-form product-variations product-size mb-0 pb-2'>
+                            //         <label>Size:</label>
+                            //         <div className='product-form-group'>
+                            //             <div className='select-box'>
+                            //                 <select name='size' className='form-control select-size' onChange={ setSizeHandler } value={ curSize }>
+                            //                     <option value="null">Choose an option</option>
+                            //                     {
+                            //                         sizes.map( item =>
+                            //                             !isDisabled( curColor, item.name ) ?
+                            //                                 <option value={ item.name } key={ "size-" + item.name }>{ item.name }</option> : ''
+                            //                         )
+                            //                     }
+                            //                 </select>
+                            //             </div>
 
-                                        <Collapse in={ 'null' !== curColor || 'null' !== curSize }>
-                                            <div className="card-wrapper overflow-hidden reset-value-button w-100 mb-0">
-                                                <ALink href='#' className='product-variation-clean' onClick={ resetValueHandler }>Clean All</ALink>
-                                            </div>
-                                        </Collapse>
-                                    </div>
-                                </div> : ""
+                            //             <Collapse in={ 'null' !== curColor || 'null' !== curSize }>
+                            //                 <div className="card-wrapper overflow-hidden reset-value-button w-100 mb-0">
+                            //                     <ALink href='#' className='product-variation-clean' onClick={ resetValueHandler }>Clean All</ALink>
+                            //                 </div>
+                            //             </Collapse>
+                            //         </div>
+                            //     </div> : ""
                         }
 
                         <div className='product-variation-price'>
@@ -265,11 +265,11 @@ const DetailOne = React.memo((props)=> {
                                                     product.data.variants[ curIndex ].price ?
                                                         product.data.variants[ curIndex ].sale_price ?
                                                             <div className="product-price mb-0">
-                                                                <ins className="new-price">${ toDecimal( product.data.variants[ curIndex ].sale_price ) }</ins>
-                                                                <del className="old-price">${ toDecimal( product.data.variants[ curIndex ].price ) }</del>
+                                                                <ins className="new-price">&euro;{ toDecimal( product.data.variants[ curIndex ].sale_price ) }</ins>
+                                                                <del className="old-price">&euro;{ toDecimal( product.data.variants[ curIndex ].price ) }</del>
                                                             </div>
                                                             : <div className="product-price mb-0">
-                                                                <ins className="new-price">${ toDecimal( product.data.variants[ curIndex ].price ) }</ins>
+                                                                <ins className="new-price">&euro;{ toDecimal( product.data.variants[ curIndex ].price ) }</ins>
                                                             </div>
                                                         : ""
                                                 }
@@ -303,24 +303,24 @@ const DetailOne = React.memo((props)=> {
                                                     product.data.variants[ curIndex ].price ?
                                                         product.data.variants[ curIndex ].sale_price ?
                                                             <>
-                                                                <ins className="new-price">${ toDecimal( product.data.variants[ curIndex ].sale_price ) }</ins>
-                                                                <del className="old-price">${ toDecimal( product.data.variants[ curIndex ].price ) }</del>
+                                                                <ins className="new-price">&euro;{ toDecimal( product.data.variants[ curIndex ].sale_price ) }</ins>
+                                                                <del className="old-price">&euro;{ toDecimal( product.data.variants[ curIndex ].price ) }</del>
                                                             </>
                                                             :
                                                             <>
-                                                                <ins className="new-price">${ toDecimal( product.data.variants[ curIndex ].price ) }</ins>
+                                                                <ins className="new-price">&euro;{ toDecimal( product.data.variants[ curIndex ].price ) }</ins>
                                                             </>
                                                         : ""
                                                     :
                                                     product.data.price[ 0 ] !== product.data.price[ 1 ] ?
                                                         product.data.variants.length === 0 ?
                                                             <>
-                                                                <ins className="new-price">${ toDecimal( product.data.price[ 0 ] ) }</ins>
-                                                                <del className="old-price">${ toDecimal( product.data.price[ 1 ] ) }</del>
+                                                                <ins className="new-price">&euro;{ toDecimal( product.data.price[ 0 ] ) }</ins>
+                                                                <del className="old-price">&euro;{ toDecimal( product.data.price[ 1 ] ) }</del>
                                                             </>
                                                             :
-                                                            < del className="new-price">${ toDecimal( product.data.price[ 0 ] ) } – ${ toDecimal( product.data.price[ 1 ] ) }</del>
-                                                        : <ins className="new-price">${ toDecimal( product.data.price[ 0 ] ) }</ins>
+                                                            < del className="new-price">&euro;{ toDecimal( product.data.price[ 0 ] ) } – &euro;{ toDecimal( product.data.price[ 1 ] ) }</del>
+                                                        : <ins className="new-price">&euro;{ toDecimal( product.data.price[ 0 ] ) }</ins>
                                             }
                                         </div>
 
@@ -339,7 +339,7 @@ const DetailOne = React.memo((props)=> {
                                 <label className="d-none">QTY:</label>
                                 <div className="product-form-group">
                                     <Quantity max={ product.data.stock } product={ product } onChangeQty={ changeQty } />
-                                    <button className={ `btn-product btn-cart text-normal ls-normal font-weight-semi-bold ${ cartActive ? '' : 'disabled' }` } onClick={ addToCartHandler }><i className='d-icon-bag'></i>Add to Cart</button>
+                                    <button className={ `btn-product btn-cart text-normal ls-normal font-weight-semi-bold &euro;{ cartActive ? '' : 'disabled' }` } onClick={ addToCartHandler }><i className='d-icon-bag'></i>Add to Cart</button>
                                 </div>
                             </div>
                         </div>
@@ -349,7 +349,7 @@ const DetailOne = React.memo((props)=> {
                         <label className="d-none">QTY:</label>
                         <div className="product-form-group">
                             <Quantity max={ product.data.stock } product={ product } onChangeQty={ changeQty } />
-                            <button className={ `btn-product btn-cart text-normal ls-normal font-weight-semi-bold ${ cartActive ? '' : 'disabled' }` } onClick={ addToCartHandler }><i className='d-icon-bag'></i>Add to Cart</button>
+                            <button className={ `btn-product btn-cart text-normal ls-normal font-weight-semi-bold &euro;{ cartActive ? '' : 'disabled' }` } onClick={ addToCartHandler }><i className='d-icon-bag'></i>Add to Cart</button>
                         </div>
                     </div>
             }
@@ -361,7 +361,8 @@ const DetailOne = React.memo((props)=> {
                     <ALink href="#" className="social-link social-facebook fab fa-facebook-f"></ALink>
                     <ALink href="#" className="social-link social-twitter fab fa-twitter"></ALink>
                     <ALink href="#" className="social-link social-pinterest fab fa-pinterest-p"></ALink>
-                </div> <span className="divider d-lg-show"></span> <a href="#" className={ `btn-product btn-wishlist` } title={ isWishlisted ? 'Browse wishlist' : 'Add to wishlist' } onClick={ wishlistHandler }>
+                </div>
+                 <span className="divider d-lg-show"></span> <a href="#" className={ `btn-product btn-wishlist` } title={ isWishlisted ? 'Browse wishlist' : 'Add to wishlist' } onClick={ wishlistHandler }>
                     <i className={ isWishlisted ? "d-icon-heart-full" : "d-icon-heart" }></i> {
                         isWishlisted ? 'Browse wishlist' : 'Add to Wishlist'
                     }

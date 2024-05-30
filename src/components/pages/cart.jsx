@@ -74,14 +74,14 @@ function Cart ( props ) {
                                                                 </div>
                                                             </td>
                                                             <td className="product-subtotal">
-                                                                <span className="amount">${ toDecimal( item.price ) }</span>
+                                                                <span className="amount">&euro;{ toDecimal( item.price ) }</span>
                                                             </td>
 
                                                             <td className="product-quantity">
                                                                 <Quantity qty={ item.qty } max={ item.stock } onChangeQty={ qty => onChangeQty( item.name, qty ) } />
                                                             </td>
                                                             <td className="product-price">
-                                                                <span className="amount">${ toDecimal( item.price * item.qty ) }</span>
+                                                                <span className="amount">&euro;{ toDecimal( item.price * item.qty ) }</span>
                                                             </td>
                                                             <td className="product-close">
                                                                 <ALink href="#" className="product-remove" title="Remove this product" onClick={ () => removeFromCart( item ) }>
@@ -96,7 +96,7 @@ function Cart ( props ) {
                                             <ALink href="/shop" className="btn btn-dark btn-md btn-rounded btn-icon-left mr-4 mb-4"><i className="d-icon-arrow-left"></i>Continue Shopping</ALink>
                                             <button
                                                 type="submit"
-                                                className={ `btn btn-outline btn-dark btn-md btn-rounded ${ compareItems() ? ' btn-disabled' : '' }` }
+                                                className={ `btn btn-outline btn-dark btn-md btn-rounded &euro;{ compareItems() ? ' btn-disabled' : '' }` }
                                                 onClick={ update }
                                             >
                                                 Update Cart
@@ -120,7 +120,7 @@ function Cart ( props ) {
                                                                 <h4 className="summary-subtitle">Subtotal</h4>
                                                             </td>
                                                             <td>
-                                                                <p className="summary-subtotal-price">${ toDecimal( getTotalPrice( cartItems ) ) }</p>
+                                                                <p className="summary-subtotal-price">&euro;{ toDecimal( getTotalPrice( cartItems ) ) }</p>
                                                             </td>
                                                         </tr>
                                                         <tr className="sumnary-shipping shipping-row-last">
@@ -181,7 +181,7 @@ function Cart ( props ) {
                                                                 <h4 className="summary-subtitle">Total</h4>
                                                             </td>
                                                             <td>
-                                                                <p className="summary-total-price ls-s">${ toDecimal( getTotalPrice( cartItems ) ) }</p>
+                                                                <p className="summary-total-price ls-s">&euro;{ toDecimal( getTotalPrice( cartItems ) ) }</p>
                                                             </td>
                                                         </tr>
                                                     </tbody>

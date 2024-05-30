@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/static/css/main.6c4efa2b.css",
-    "main.js": "/static/js/main.fffc4510.js",
+    "main.js": "/static/js/main.46c9b8a4.js",
     "static/js/845.5e3604d0.chunk.js": "/static/js/845.5e3604d0.chunk.js",
-    "static/media/image.png": "/static/media/image.3b01a552ba203a6427dd.png",
     "static/media/riode.eot?5gap68": "/static/media/riode.6f777af5c12ab902c54d.eot",
     "static/media/riode.ttf?5gap68": "/static/media/riode.4f5f185d1b1d9cfcc7a6.ttf",
     "static/media/riode.woff?5gap68": "/static/media/riode.879b38fc8c4c0e9f6904.woff",
     "static/media/elements.png": "/static/media/elements.2b796e595926374d1bfe.png",
     "static/media/404.png": "/static/media/404.b299395579cc09551dfa.png",
+    "static/media/GameReadyGear - White Orange.webp": "/static/media/GameReadyGear - White Orange.4850830a09a54fe2fc54.webp",
     "index.html": "/index.html",
     "main.6c4efa2b.css.map": "/static/css/main.6c4efa2b.css.map",
-    "main.fffc4510.js.map": "/static/js/main.fffc4510.js.map",
+    "main.46c9b8a4.js.map": "/static/js/main.46c9b8a4.js.map",
     "845.5e3604d0.chunk.js.map": "/static/js/845.5e3604d0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6c4efa2b.css",
-    "static/js/main.fffc4510.js"
+    "static/js/main.46c9b8a4.js"
   ]
 }

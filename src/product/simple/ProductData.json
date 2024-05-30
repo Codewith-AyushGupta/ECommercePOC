@@ -5,7 +5,7 @@
           "name": "Nike SB x Air Jordan 4 Retro",
           "price": [500,500],
           "discount": 10,
-          "short_description": "This is a dummy product.",
+          "short_description": "Price after discount",
           "sku": "DUM-PRO-001",
           "stock": 1000,
           "ratings": 4.5,

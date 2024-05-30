@@ -24,7 +24,7 @@ function ProductHome() {
                                 </div>
                             </div>
 
-                            <DescOne product={ Data} />
+                            {/* <DescOne product={ Data} /> */}
 
                             {/* <RelatedProducts products={ related } /> */}
                         </div>
