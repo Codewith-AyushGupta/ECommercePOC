@@ -19,7 +19,7 @@ function Footer() {
                                     <p className="ls-s">Fringilla urna porttitor rhoncus dolor purus<br />
                                         luctus venenatis lectus magna fringilla diam<br />
                                         maecenas ultricies mi eget mauris.</p>
-                                    <ALink href="mailto:mail@riode.com">Riode@example.com</ALink>
+                                    <ALink href="mailto:mail@riode.com">info@grg-sports.com</ALink>
                                 </div>
                             </div>
 
