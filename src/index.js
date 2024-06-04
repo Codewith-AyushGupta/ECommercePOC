@@ -16,17 +16,23 @@ import Wishlist from './Pages/Pages/Wishlist';
 import { store, persistor } from '..//src/product/store/index'
 import { wrapper } from '..//src/product/store/index'
 import Cart from './components/pages/cart';
+import Checkout from './components/pages/checkout';
+import order from './components/pages/order';
+import Home from './components/home/home';
+import Order from './components/pages/order';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Provider store={store}>
       <Router>
         <Routes>
-          <Route path="/" element={<Layout/>} />
+          <Route path="/" element={<Layout children={<Home/>}/>} />
           <Route path="/contact" element={<Layout children={<Contact />}/>} />
           <Route path="/product/default/sample" element={<Layout children={<ProductHome/>}/>} />
           <Route path="/pages/cart" element={<Layout children={<Cart/>} />} />
           <Route path="/pages/wishlist" element={<Layout children={<Wishlist/>}/>} />
+          <Route path="/pages/checkout" element={<Layout children={<Checkout/>}/>} />
+          <Route path="/pages/order" element={<Layout children={<Order/>}/>} />
           <Route path="*" element={<Layout children={<Error404/>} />} />
           {/* <wrapper/> */}
         </Routes>

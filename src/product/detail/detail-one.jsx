@@ -44,7 +44,6 @@ const DetailOne = React.memo((props)=> {
             } );
         }
     }
-
     useEffect( () => {
         return () => {
             setCurIndex( -1 );
@@ -343,7 +342,7 @@ const DetailOne = React.memo((props)=> {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> 
                     :
                     <div className="product-form product-qty pb-0">
                         <label className="d-none">QTY:</label>

@@ -6,6 +6,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
 import 'react-image-lightbox/style.css';
 import 'react-input-range/lib/css/index.css';
+import '..//..//src/public/vendor/riode-fonts/riode-fonts.css'
 import { useLocation } from 'react-router-dom';
 import ALink from './features/custom-link';
 import MobileMenu from './partial/mobile-menu';

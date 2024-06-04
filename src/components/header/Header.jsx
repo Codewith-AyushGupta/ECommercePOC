@@ -7,7 +7,6 @@ import SearchForm from '../partial/Search-box';
 import { headerBorderRemoveList } from './data/menu';
 import logo from './images/image.png'
 import LoginModal from '../login/login-modal'
-import '..//.//..//..//src/public/vendor/riode-fonts/riode-fonts.css'
 function Header() {
     const { home } = useParams();
 
@@ -64,12 +63,19 @@ function Header() {
             <div className="header-middle sticky-header fix-top sticky-content">
                 <div className="container">
                     <div className="header-left">
-                        <ALink href="#" className="mobile-menu-toggle" onClick={showMobileMenu}>
+                        {/* <ALink href="#" className="mobile-menu-toggle" onClick={showMobileMenu}>
                             <i className="d-icon-bars2"></i>
-                        </ALink>
+                        </ALink> */}
 
                         <ALink href="/" className="logo">
-                            <img src={logo} alt="logo" width="153" height="44" />
+                            {/* <img src={logo} alt="logo" width="153" height="44" /> */}
+                            <h1 style={{
+                                fontSize: '2rem',
+                                margin: '0',
+                                padding: '0',
+                                fontWeight: 'bolder',
+                                textDecoration: 'underline'
+                            }}>Game Ready Gear</h1>
                         </ALink>
 
                         {/* <SearchForm /> */}
@@ -87,7 +93,7 @@ function Header() {
                         </ALink> */}
                         <span className="divider"></span>
                         <ALink href="/pages/wishlist" className="wishlist">
-                        <i className="d-icon-heart"></i>
+                            <i className="d-icon-heart"></i>
                         </ALink>
                         <span className="divider"></span>
 

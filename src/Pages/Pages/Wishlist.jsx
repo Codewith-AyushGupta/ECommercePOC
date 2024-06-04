@@ -55,7 +55,7 @@ function Wishlist( props ) {
                                                   <td className="product-thumbnail">
                                                       <ALink href={ '/product/default/' + item.slug }>
                                                           <figure>
-                                                              <img src={ process.env.NEXT_PUBLIC_ASSET_URI + item.pictures[ 0 ].url } width="100" height="100"
+                                                              <img src={item.pictures[ 0 ].url } width="100" height="100"
                                                                   alt="product" />
                                                           </figure>
                                                       </ALink>

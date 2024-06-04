@@ -459,3 +459,28 @@
         margin-bottom: 1rem;
     }
 }
+
+.sticky-footer {
+    display: none; /* Hide footer by default */
+}
+
+@media (max-width: 767px) {
+    .sticky-footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: white; /* Change this to match your site's design */
+        z-index: 1000;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        padding: 10px 0;
+    }
+}
+.owl-prev{
+    display: none;
+}
+.owl-next{
+    display: none;
+}

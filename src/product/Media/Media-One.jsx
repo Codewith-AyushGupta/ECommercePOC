@@ -98,7 +98,7 @@ export default function MediaOne( props ) {
                                     className="product-image large-image"
                                 />
                             </div>
-                        ) }
+                        ) } 
                 </OwlCarousel>
 
                 <ALink href="#" className="product-image-full" onClick={ openLightBox }><i className="d-icon-zoom"></i></ALink>
