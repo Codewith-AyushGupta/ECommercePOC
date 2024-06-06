@@ -31,8 +31,8 @@ root.render(
           <Route path="/product/default/sample" element={<Layout children={<ProductHome/>}/>} />
           <Route path="/pages/cart" element={<Layout children={<Cart/>} />} />
           <Route path="/pages/wishlist" element={<Layout children={<Wishlist/>}/>} />
-          <Route path="/pages/checkout" element={<Layout children={<Checkout/>}/>} />
-          <Route path="/pages/order" element={<Layout children={<Order/>}/>} />
+          {/* <Route path="/pages/checkout" element={<Layout children={<Checkout/>}/>} /> */}
+          {/* <Route path="/pages/order" element={<Layout children={<Order/>}/>} /> */}
           <Route path="*" element={<Layout children={<Error404/>} />} />
           {/* <wrapper/> */}
         </Routes>

@@ -6,7 +6,6 @@ import OwlCarousel from '../../../product/owl-carousel';
 import { fadeInUpShorter,fadeInRightShorter, fadeInDownShorter, blurIn } from '../../../basePathLocation/data/keyframes';
 import { introSlider } from '../../../basePathLocation/data/carousel';
 
-
 import CrauserImg1 from '../images/1.png'
 import CrauserImg2 from '../images/2.jpg'
 import cap from '../images/3.jpg'
@@ -16,7 +15,7 @@ function IntroSection() {
     return (
         <section className="intro-section">
             <div className="row">
-                <div className="col-12 mb-4">
+            <div className="col-12 mb-4">
                     <OwlCarousel adClass="owl-theme owl-dot-inner owl-dot-white intro-slider animation-slider" options={ introSlider }>
                         <div className="banner banner-fixed intro-slide1 content-center content-middle"
                             style={ { backgroundColor: "#444342" } }>
@@ -44,13 +43,13 @@ function IntroSection() {
 
                                 <Reveal keyframes={ fadeInRightShorter } duration={ 1000 } delay={ 1000 }>
                                     <h5 className="font-weight-normal text-white lh-1 ls-normal text-right mb-1">
-                                        Start at <span className="text-secondary font-weight-bold">&euro;19.99</span>
+                                        Start at <span className="text-secondary font-weight-bold">$19.99</span>
                                     </h5>
                                 </Reveal>
                             </div>
                         </div>
 
-                        {/* <div className="intro-slide2 banner banner-fixed">
+                        <div className="intro-slide2 banner banner-fixed">
                             <figure>
                                 <LazyLoadImage
                                     threshold={ 500 }
@@ -79,14 +78,14 @@ function IntroSection() {
 
                                 <Reveal keyframes={ fadeInUpShorter } duration={ 1000 } delay={ 900 }>
                                     <p className="font-weight-normal ls-s mb-7">
-                                        Get Free Shipping on all orders over &euro;99.00</p>
+                                        Get Free Shipping on all orders over $99.00</p>
                                 </Reveal>
 
                                 <Reveal keyframes={ fadeInUpShorter } duration={ 1200 } delay={ 1100 }>
                                     <ALink href="/product/default/sample" className="btn btn-white btn-rounded">Shop now</ALink>
                                 </Reveal>
                             </div>
-                        </div> */}
+                        </div>
                     </OwlCarousel>
                 </div>
 

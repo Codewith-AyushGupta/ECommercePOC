@@ -6,7 +6,7 @@ import IntroSection from './partials/intro-section';
 import data from './data/featuredData.json'
 import BestCollection from './partials/BestCollection';
 import CategorySection from './category-section';
-// import PromoSection from '~/components/partials/home/promo-section';
+import PromoSection from './partials/PromoSection';
 import FeaturedCollection from './partials/FeaturedCollection';
 // import InstagramSection from '~/components/partials/home/instagram-section';
 // import ServiceBox from '~/components/partials/home/service-section';
@@ -34,7 +34,7 @@ function HomePage() {
 
                     <CategorySection />
 
-                    {/* <PromoSection /> */}
+                    <PromoSection />
 
                     {/* <FeaturedCollection products={ featured } loading={ loading } /> */}
 

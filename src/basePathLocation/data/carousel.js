@@ -348,9 +348,13 @@ export const mainSlider20 = {
 
 // home page
 export const introSlider = {
-    nav: false,
+    loop: false,
+    margin: 10,
+    nav: true,
     dots: true,
-    items: 1
+    items: 1,
+    autoplay: true,
+    autoplayTimeout: 5000,
 }
 
 export const serviceSlider = {
