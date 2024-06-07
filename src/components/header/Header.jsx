@@ -63,9 +63,9 @@ function Header() {
             <div className="header-middle sticky-header fix-top sticky-content">
                 <div className="container">
                     <div className="header-left">
-                        {/* <ALink href="#" className="mobile-menu-toggle" onClick={showMobileMenu}>
+                        <ALink href="#" className="mobile-menu-toggle" onClick={showMobileMenu}>
                             <i className="d-icon-bars2"></i>
-                        </ALink> */}
+                        </ALink>
 
                         <ALink href="/" className="logo">
                             {/* <img src={logo} alt="logo" width="153" height="44" /> */}
@@ -78,7 +78,7 @@ function Header() {
                             }}>Game Ready Gear</h1>
                         </ALink>
 
-                        {/* <SearchForm /> */}
+                        <SearchForm />
                     </div>
 
                     <div className="header-right">

@@ -1,0 +1,216 @@
+{
+    "post": {
+        "data": [
+            {
+                "title": "Post One",
+                "slug": "post-one",
+                "author": "Author One",
+                "date": "2024-06-01",
+                "comments": 5,
+                "content": "Content for post one.",
+                "type": "article",
+                "large_picture": [{
+                    "url": "https://d-themes.com/wordpress/riode/elements/wp-content/uploads/sites/3/2020/09/post-1.jpg",
+                    "width": 1920,
+                    "height": 1080
+                }],
+                "picture": {
+                    "url": "https://d-themes.com/wordpress/riode/elements/wp-content/uploads/sites/3/2020/09/post-1.jpg",
+                    "width": 800,
+                    "height": 600
+                },
+                "video": {
+                    "url": "https://d-themes.com/wordpress/riode/elements/wp-content/uploads/sites/3/2020/09/post-1.jpg",
+                    "width": 1280,
+                    "height": 720
+                },
+                "categories": [
+                    {
+                        "name": "Category One",
+                        "slug": "category-one"
+                    },
+                    {
+                        "name": "Category Two",
+                        "slug": "category-two"
+                    }
+                ]
+            },
+            {
+                "title": "Post Two",
+                "slug": "post-two",
+                "author": "Author Two",
+                "date": "2024-06-02",
+                "comments": 10,
+                "content": "Content for post two.",
+                "type": "video",
+                "large_picture": [{
+                    "url": "https://d-themes.com/wordpress/riode/elements/wp-content/uploads/sites/3/2020/09/post-1.jpg",
+                    "width": 1920,
+                    "height": 1080
+                }],
+                "picture": {
+                    "url": "https://d-themes.com/wordpress/riode/elements/wp-content/uploads/sites/3/2020/09/post-1.jpg",
+                    "width": 800,
+                    "height": 600
+                },
+                "video": {
+                    "url": "https://d-themes.com/wordpress/riode/elements/wp-content/uploads/sites/3/2020/09/post-1.jpg",
+                    "width": 1280,
+                    "height": 720
+                },
+                "categories": [
+                    {
+                        "name": "Category Three",
+                        "slug": "category-three"
+                    }
+                ]
+            },
+            {
+                "title": "Post Three",
+                "slug": "post-three",
+                "author": "Author Three",
+                "date": "2024-06-03",
+                "comments": 15,
+                "content": "Content for post three.",
+                "type": "image",
+                "large_picture": [{
+                    "url": "https://d-themes.com/wordpress/riode/elements/wp-content/uploads/sites/3/2020/09/post-1.jpg",
+                    "width": 1920,
+                    "height": 1080
+                }],
+                "picture": {
+                    "url": "https://d-themes.com/wordpress/riode/elements/wp-content/uploads/sites/3/2020/09/post-1.jpg",
+                    "width": 800,
+                    "height": 600
+                },
+                "video": {
+                    "url": "https://d-themes.com/wordpress/riode/elements/wp-content/uploads/sites/3/2020/09/post-1.jpg",
+                    "width": 1280,
+                    "height": 720
+                },
+                "categories": [
+                    {
+                        "name": "Category Four",
+                        "slug": "category-four"
+                    }
+                ]
+            },
+            {
+                "title": "Post Four",
+                "slug": "post-four",
+                "author": "Author Four",
+                "date": "2024-06-04",
+                "comments": 20,
+                "content": "Content for post four.",
+                "type": "text",
+                "large_picture": [{
+                    "url": "https://d-themes.com/wordpress/riode/elements/wp-content/uploads/sites/3/2020/09/post-1.jpg",
+                    "width": 1920,
+                    "height": 1080
+                }],
+                "picture": {
+                    "url": "https://d-themes.com/wordpress/riode/elements/wp-content/uploads/sites/3/2020/09/post-1.jpg",
+                    "width": 800,
+                    "height": 600
+                },
+                "video": {
+                    "url": "https://d-themes.com/wordpress/riode/elements/wp-content/uploads/sites/3/2020/09/post-1.jpg",
+                    "width": 1280,
+                    "height": 720
+                },
+                "categories": [
+                    {
+                        "name": "Category Five",
+                        "slug": "category-five"
+                    }
+                ]
+            },
+            {
+                "title": "Post Five",
+                "slug": "post-five",
+                "author": "Author Five",
+                "date": "2024-06-05",
+                "comments": 25,
+                "content": "Content for post five.",
+                "type": "article",
+                "large_picture": [{
+                    "url": "https://d-themes.com/wordpress/riode/elements/wp-content/uploads/sites/3/2020/09/post-1.jpg",
+                    "width": 1920,
+                    "height": 1080
+                }],
+                "picture": {
+                    "url": "https://d-themes.com/wordpress/riode/elements/wp-content/uploads/sites/3/2020/09/post-1.jpg",
+                    "width": 800,
+                    "height": 600
+                },
+                "video": {
+                    "url": "https://d-themes.com/wordpress/riode/elements/wp-content/uploads/sites/3/2020/09/post-1.jpg",
+                    "width": 1280,
+                    "height": 720
+                },
+                "categories": [
+                    {
+                        "name": "Category Six",
+                        "slug": "category-six"
+                    }
+                ]
+            }
+        ],
+        "related": [
+            {
+                "title": "Related Post One",
+                "slug": "related-post-one",
+                "date": "2024-06-06",
+                "type": "article",
+                "comments": 2,
+                "content": "Content for related post one.",
+                "picture": {
+                    "url": "https://d-themes.com/wordpress/riode/elements/wp-content/uploads/sites/3/2020/09/5-3.jpg",
+                    "width": 800,
+                    "height": 600
+                },
+                "video": {
+                    "url": "https://d-themes.com/wordpress/riode/elements/wp-content/uploads/sites/3/2020/09/5-3.jpg",
+                    "width": 1280,
+                    "height": 720
+                }
+            },
+            {
+                "title": "Related Post Two",
+                "slug": "related-post-two",
+                "date": "2024-06-07",
+                "type": "video",
+                "comments": 3,
+                "content": "Content for related post two.",
+                "picture": {
+                    "url": "https://d-themes.com/wordpress/riode/elements/wp-content/uploads/sites/3/2020/09/post-2.jpg",
+                    "width": 800,
+                    "height": 600
+                },
+                "video": {
+                    "url": "https://d-themes.com/wordpress/riode/elements/wp-content/uploads/sites/3/2020/09/post-2.jpg",
+                    "width": 1280,
+                    "height": 720
+                }
+            },
+            {
+                "title": "Related Post Three",
+                "slug": "related-post-Three",
+                "date": "2024-06-07",
+                "type": "video",
+                "comments": 3,
+                "content": "Content for related post Three.",
+                "picture": {
+                    "url": "https://d-themes.com/wordpress/riode/elements/wp-content/uploads/sites/3/2020/09/6-3.jpg",
+                    "width": 800,
+                    "height": 600
+                },
+                "video": {
+                    "url": "https://d-themes.com/wordpress/riode/elements/wp-content/uploads/sites/3/2020/09/6-3.jpg",
+                    "width": 1280,
+                    "height": 720
+                }
+            }
+        ]
+    }
+}

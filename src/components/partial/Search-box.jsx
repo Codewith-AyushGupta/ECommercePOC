@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 
 function SearchForm() {
     const history = useNavigate();
-
+    
     return (
         <div className="header-search hs-simple">
             <a href="#" className="search-toggle" role="button"><i className="icon-search-3"></i></a>
