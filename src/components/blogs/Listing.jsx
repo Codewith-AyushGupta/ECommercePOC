@@ -7,7 +7,7 @@ import ALink from '../features/custom-link';
 import data from './data/blogData.json'
 import Breadcrumb from '../partial/Breadcrumb';
 function Listing () {
-    debugger;
+    // debugger;
     const showingCount = 1;
    
     const perPage = showingCount;

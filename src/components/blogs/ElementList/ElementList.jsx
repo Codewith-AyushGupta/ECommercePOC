@@ -26,7 +26,7 @@ function ElementsList(props) {
                         </ALink>
                     </div>
                     <div className="col-xl-5col col-lg-3 col-md-4 col-sm-6 col-12">
-                        {/* <ALink href="/elements/blog-posts" className="element-type">
+                        <ALink href="/elements/blog-posts" className="element-type">
                             <div className="element element-blog">
                                 <svg xmlns="http://www.w3.org/2000/svg"
                                     xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="62px"
@@ -58,7 +58,7 @@ function ElementsList(props) {
                                 </svg>
                                 <p>blog posts</p>
                             </div>
-                        </ALink> */}
+                        </ALink>
                     </div>
                     <div className="col-xl-5col col-lg-3 col-md-4 col-sm-6 col-12">
                         <ALink href="/elements/buttons" className="element-type">
