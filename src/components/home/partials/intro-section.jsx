@@ -43,7 +43,7 @@ function IntroSection() {
 
                                 <Reveal keyframes={ fadeInRightShorter } duration={ 1000 } delay={ 1000 }>
                                     <h5 className="font-weight-normal text-white lh-1 ls-normal text-right mb-1">
-                                        Start at <span className="text-secondary font-weight-bold">$19.99</span>
+                                        Start at <span className="text-secondary font-weight-bold">&euro;19.99</span>
                                     </h5>
                                 </Reveal>
                             </div>
@@ -78,7 +78,7 @@ function IntroSection() {
 
                                 <Reveal keyframes={ fadeInUpShorter } duration={ 1000 } delay={ 900 }>
                                     <p className="font-weight-normal ls-s mb-7">
-                                        Get Free Shipping on all orders over $99.00</p>
+                                        Get Free Shipping on all orders over &euro;99.00</p>
                                 </Reveal>
 
                                 <Reveal keyframes={ fadeInUpShorter } duration={ 1200 } delay={ 1100 }>

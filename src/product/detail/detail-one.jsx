@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Collapse from 'react-bootstrap/Collapse';
 import ALink from '../../components/features/custom-link';
+import { ToastContainer, toast } from 'react-toastify';
 import { useLocation } from 'react-router-dom';
 import Countdown from '../countDown';
 import Quantity from '../quantity';
@@ -9,11 +10,21 @@ import { toDecimal } from '../utils';
 import { cartActions } from '..//store/cart'
 import { connect } from 'react-redux';// DONE
 import { useNavigate } from 'react-router-dom';
-
+import DynamicProductVarient from '../utils/dynamicProductVarient';
 const DetailOne = React.memo((props)=> {
-    const navigate = useNavigate();
-
-    const router = useLocation();
+    const navigate = useNavigate();  
+    const [filterData, setFilterData] = useState({});
+    const HandelFilterData = (data, filterStatus)=>{
+        console.log('data from parent ',JSON.stringify(data), '    FilterStatus : ',filterStatus);
+        setFilterData(data);
+        if(filterStatus){
+            setCartActive(true);
+            setCurIndex( product.data.variants.findIndex( item => ( item.size !== null && item.color !== null && item.color.name === curColor && item.size.name === curSize ) || ( item.size === null && item.color.name === curColor ) || ( item.color === null && item.size.name === curSize ) ) );
+        }
+        else{
+            setCartActive(false);
+        }
+    }
     const { data, isStickyCart = false, adClass = '', isNav = true } = props;
     const { toggleWishlist, addToCart, wishlist } = props;
 
@@ -22,7 +33,7 @@ const DetailOne = React.memo((props)=> {
     const [curIndex, setCurIndex] = useState(-1);
     const [cartActive, setCartActive] = useState(false);
     const [quantity, setQauntity] = useState(1);
-    let product = data;
+    let product = data.Data;
 
     // decide if the product is wishlisted
     let isWishlisted, colors = [], sizes = [];
@@ -50,24 +61,6 @@ const DetailOne = React.memo((props)=> {
             resetValueHandler();
         }
     }, [ product ] )
-
-    useEffect( () => {
-        if ( product.data.variants.length > 0 ) {
-            if ( ( curSize !== 'null' && curColor !== 'null' ) || ( curSize === 'null' && product.data.variants[ 0 ].size === null && curColor !== 'null' ) || ( curColor === 'null' && product.data.variants[ 0 ].color === null && curSize !== 'null' ) ) {
-                setCartActive( true );
-                setCurIndex( product.data.variants.findIndex( item => ( item.size !== null && item.color !== null && item.color.name === curColor && item.size.name === curSize ) || ( item.size === null && item.color.name === curColor ) || ( item.color === null && item.size.name === curSize ) ) );
-            } else {
-                setCartActive( false );
-            }
-        } else {
-            setCartActive( true );
-        }
-
-        if ( product.stock === 0 ) {
-            setCartActive( false );
-        }
-    }, [ curColor, curSize, product ] )
-
     const wishlistHandler = ( e ) => {
         debugger;
         e.preventDefault();
@@ -85,16 +78,13 @@ const DetailOne = React.memo((props)=> {
         }
     }
 
-    const setColorHandler = ( e ) => {
-        setCurColor( e.target.value );
-    }
 
-    const setSizeHandler = ( e ) => {
-        setCurSize( e.target.value );
-    }
 
     const addToCartHandler = () => {
-        // debugger;
+        debugger;
+        if(!cartActive){
+            alert('Select the Req Filters')
+        }
         if ( product.data.stock > 0 && cartActive ) {
             console.log('product detail  ==>> ',product)
             if ( product.data.variants.length > 0 ) {
@@ -210,50 +200,50 @@ const DetailOne = React.memo((props)=> {
             {
                 product && product.data.variants.length > 0 ?
                     <>
-                        {
-                            // product.data.variants[ 0 ].color ?
-                            //     <div className='product-form product-variations product-color'>
-                            //         <label>Color:</label>
-                            //         <div className='select-box'>
-                            //             <select name='color' className='form-control select-color' onChange={ setColorHandler } value={ curColor }>
-                            //                 <option value="null">Choose an option</option>
-                            //                 {
-                            //                     colors.map( item =>
-                            //                         !isDisabled( item.name, curSize ) ?
-                            //                             <option value={ item.name } key={ "color-" + item.name }>{ item.name }</option> : ''
-                            //                     )
-                            //                 }
-                            //             </select>
-                            //         </div>
-                            //     </div> : ""
-                        }
+                         {/* {
+                            product.data.variants[ 0 ].color ?
+                                <div className='product-form product-variations product-color'>
+                                    <label>Color:</label>
+                                    <div className='select-box'>
+                                        <select name='color' className='form-control select-color' onChange={ setColorHandler } value={ curColor }>
+                                            <option value="null">Choose an option</option>
+                                            {
+                                                colors.map( item =>
+                                                    !isDisabled( item.name, curSize ) ?
+                                                        <option value={ item.name } key={ "color-" + item.name }>{ item.name }</option> : ''
+                                                )
+                                            }
+                                        </select>
+                                    </div>
+                                </div> : ""
+                        } 
 
-                        {
-                            // product.data.variants[ 0 ].size ?
-                            //     <div className='product-form product-variations product-size mb-0 pb-2'>
-                            //         <label>Size:</label>
-                            //         <div className='product-form-group'>
-                            //             <div className='select-box'>
-                            //                 <select name='size' className='form-control select-size' onChange={ setSizeHandler } value={ curSize }>
-                            //                     <option value="null">Choose an option</option>
-                            //                     {
-                            //                         sizes.map( item =>
-                            //                             !isDisabled( curColor, item.name ) ?
-                            //                                 <option value={ item.name } key={ "size-" + item.name }>{ item.name }</option> : ''
-                            //                         )
-                            //                     }
-                            //                 </select>
-                            //             </div>
+                         {
+                            product.data.variants[ 0 ].size ?
+                                <div className='product-form product-variations product-size mb-0 pb-2'>
+                                    <label>Size:</label>
+                                    <div className='product-form-group'>
+                                        <div className='select-box'>
+                                            <select name='size' className='form-control select-size' onChange={ setSizeHandler } value={ curSize }>
+                                                <option value="null">Choose an option</option>
+                                                {
+                                                    sizes.map( item =>
+                                                        !isDisabled( curColor, item.name ) ?
+                                                            <option value={ item.name } key={ "size-" + item.name }>{ item.name }</option> : ''
+                                                    )
+                                                }
+                                            </select>
+                                        </div>
 
-                            //             <Collapse in={ 'null' !== curColor || 'null' !== curSize }>
-                            //                 <div className="card-wrapper overflow-hidden reset-value-button w-100 mb-0">
-                            //                     <ALink href='#' className='product-variation-clean' onClick={ resetValueHandler }>Clean All</ALink>
-                            //                 </div>
-                            //             </Collapse>
-                            //         </div>
-                            //     </div> : ""
-                        }
-
+                                        <Collapse in={ 'null' !== curColor || 'null' !== curSize }>
+                                            <div className="card-wrapper overflow-hidden reset-value-button w-100 mb-0">
+                                                <ALink href='#' className='product-variation-clean' onClick={ resetValueHandler }>Clean All</ALink>
+                                            </div>
+                                        </Collapse>
+                                    </div>
+                                </div> : ""
+                        }  */} 
+                        {/* <DynamicProductVarient productDetail={product} getFilterData={HandelFilterData}/> */}
                         <div className='product-variation-price'>
                             <Collapse in={ cartActive && curIndex > -1 }>
                                 <div className="card-wrapper">

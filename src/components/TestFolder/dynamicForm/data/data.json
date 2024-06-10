@@ -1,0 +1,74 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "name": "Adidas Running Shoes",
+        "description": "High-performance running shoes from Adidas",
+        "price": 20000,
+        "category": "Shoes",
+        "brand": "Adidas",
+        "filters": [
+          {
+            "name": "color",
+            "isRequried":true,
+            "type": "picklist",
+            "entries": ["Black", "White", "Red", "Blue"],
+            "required": true
+          },
+          {
+            "name": "size",
+            "isRequried":false,
+            "type": "text",
+            "dataType": "number",
+            "required": true
+          },
+          {
+            "name": "material",
+            "type": "picklist",
+            "isRequried":false,
+            "entries": ["Leather", "Mesh", "Synthetic"],
+            "required": false
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Nike Basketball Shoes",
+        "description": "High-top basketball shoes from Nike",
+        "price": 10000,
+        "category": "Shoes",
+        "brand": "Nike",
+        "filters": [
+          {
+            "name": "color",
+            "isRequried":true,
+            "type": "picklist",
+            "entries": ["Black", "White", "Red", "Blue"],
+            "required": true
+          },
+          {
+            "name": "size",
+            "type": "text",
+            "isRequried":true,
+            "dataType": "number",
+            "required": true
+          },
+          {
+            "name": "material",
+            "type": "picklist",
+            "isRequried":false,
+            "entries": ["Leather", "Synthetic"],
+            "required": false
+          },
+          {
+            "name": "usage",
+            "type": "picklist",
+            "entries": ["Outdoor", "Indoor", "All"],
+            "isRequried":false,
+            "required": false
+          }
+        ]
+      }
+    ]
+  }
+  

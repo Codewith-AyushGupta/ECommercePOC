@@ -97,8 +97,35 @@
                   "width": 100,
                   "height": 100
                 }
+              },
+              "size": {
+                "name": "Large",
+                "size": "L",
+                "thumb": {
+                  "url": "https://i5.walmartimages.com/asr/40ad87f2-5050-42f2-998b-a6f288fcba10.e7231b55a343db24801a916b3d89cc36.jpeg",
+                  "width": 100,
+                  "height": 100
+                }
               }
             }
-          ] 
+          ],
+          "filters":[{
+            "name":"Color",
+            "fieldType":"picklist",
+            "entries":["Red","Black"],
+            "isRequried":true
+          },
+          {
+            "name":"Size",
+            "fieldType":"picklist",
+            "entries":["S","L","XL","XXL"],
+            "isRequried":true
+          },
+          {
+            "name":"inSole",
+            "fieldType":"picklist",
+            "entries":["Normal","Membrane"],
+            "isRequried":false
+          }]
     }
 }

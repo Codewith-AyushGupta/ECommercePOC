@@ -1,0 +1,123 @@
+{
+  "data": {
+      "id": "1",
+      "slug": "Nike SB x Air Jordan 2 Retro",
+      "name": "Nike SB x Air Jordan 2 Retro",
+      "price": [200, 200],
+      "discount": 15,
+      "short_description": "Price after discount",
+      "sku": "DUM-PRO-002",
+      "stock": 500,
+      "ratings": 4.7,
+      "reviews": 40,
+      "sale_count": 300,
+      "is_new": true,
+      "is_top": true,
+      "until": "2023-01-01T00:00:00Z",
+      "pictures": [
+          {
+              "url": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSv5m2VCp6xoRXdEImp3pIDTK6T67CkI7eztz2WfKqUCanwcTiEug3ilotKUB9DLLiaE2jfsu98n2evDhOg4HbVpYa-DB-2DBNIDK4Cvgdr7meRA3kIJNL_dBc",
+              "width": 600,
+              "height": 400
+          },
+          {
+              "url": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSv5m2VCp6xoRXdEImp3pIDTK6T67CkI7eztz2WfKqUCanwcTiEug3ilotKUB9DLLiaE2jfsu98n2evDhOg4HbVpYa-DB-2DBNIDK4Cvgdr7meRA3kIJNL_dBc",
+              "width": 600,
+              "height": 400
+          }
+      ],
+      "small_pictures": [
+          {
+              "url": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSv5m2VCp6xoRXdEImp3pIDTK6T67CkI7eztz2WfKqUCanwcTiEug3ilotKUB9DLLiaE2jfsu98n2evDhOg4HbVpYa-DB-2DBNIDK4Cvgdr7meRA3kIJNL_dBcl.jpeg",
+              "width": 300,
+              "height": 200
+          },
+          {
+              "url": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSv5m2VCp6xoRXdEImp3pIDTK6T67CkI7eztz2WfKqUCanwcTiEug3ilotKUB9DLLiaE2jfsu98n2evDhOg4HbVpYa-DB-2DBNIDK4Cvgdr7meRA3kIJNL_dBcl.jpeg",
+              "width": 300,
+              "height": 200
+          }
+      ],
+      "large_pictures": [
+          {
+              "url": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSv5m2VCp6xoRXdEImp3pIDTK6T67CkI7eztz2WfKqUCanwcTiEug3ilotKUB9DLLiaE2jfsu98n2evDhOg4HbVpYa-DB-2DBNIDK4Cvgdr7meRA3kIJNL_dBce.jpeg",
+              "width": 1200,
+              "height": 800
+          },
+          {
+              "url": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSv5m2VCp6xoRXdEImp3pIDTK6T67CkI7eztz2WfKqUCanwcTiEug3ilotKUB9DLLiaE2jfsu98n2evDhOg4HbVpYa-DB-2DBNIDK4Cvgdr7meRA3kIJNL_dBce.jpeg",
+              "width": 1200,
+              "height": 800
+          }
+      ],
+      "categories": [
+          {
+              "name": "Clothing",
+              "slug": "clothing"
+          },
+          {
+              "name": "Outerwear",
+              "slug": "outerwear"
+          }
+      ],
+      "tags": [
+          {
+              "name": "Nike",
+              "slug": "Nike"
+          },
+          {
+              "name": "Nike",
+              "slug": "Nike"
+          }
+      ],
+      "brands": [
+          {
+              "name": "Nike",
+              "slug": "Nike"
+          }
+      ],
+      "variants": [
+          {
+              "price": [200],
+              "sale_price": 170,
+              "color": {
+                  "name": "Black",
+                  "color": "#000000",
+                  "thumb": {
+                      "url": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSv5m2VCp6xoRXdEImp3pIDTK6T67CkI7eztz2WfKqUCanwcTiEug3ilotKUB9DLLiaE2jfsu98n2evDhOg4HbVpYa-DB-2DBNIDK4Cvgdr7meRA3kIJNL_dBcthumb.jpeg",
+                      "width": 100,
+                      "height": 100
+                  }
+              },
+              "size": {
+                  "name": "Large",
+                  "size": "L",
+                  "thumb": {
+                      "url": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSv5m2VCp6xoRXdEImp3pIDTK6T67CkI7eztz2WfKqUCanwcTiEug3ilotKUB9DLLiaE2jfsu98n2evDhOg4HbVpYa-DB-2DBNIDK4Cvgdr7meRA3kIJNL_dBcthumb.jpeg",
+                      "width": 100,
+                      "height": 100
+                  }
+              }
+          }
+      ],
+      "filters": [
+          {
+              "name": "Color",
+              "fieldType": "picklist",
+              "entries": ["Red", "Black"],
+              "isRequried": true
+          },
+          {
+              "name": "Size",
+              "fieldType": "picklist",
+              "entries": ["S", "L", "XL", "XXL"],
+              "isRequried": true
+          },
+          {
+            "name": "Msg",
+            "fieldType": "text",
+            "isRequried": false
+        }
+      ]
+  }
+}

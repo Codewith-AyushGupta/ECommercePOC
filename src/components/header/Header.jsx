@@ -5,7 +5,7 @@ import CartMenu from '../partial/cart-menu';
 import MainMenu from '../partial/main-menu';
 import SearchForm from '../partial/Search-box';
 import { headerBorderRemoveList } from './data/menu';
-import logo from './images/image.png'
+import logo from './images/LogoV2.png'
 import LoginModal from '../login/login-modal'
 function Header() {
     const { home } = useParams();
@@ -68,14 +68,14 @@ function Header() {
                         </ALink>
 
                         <ALink href="/" className="logo">
-                            {/* <img src={logo} alt="logo" width="153" height="44" /> */}
-                            <h1 style={{
+                            <img src={logo} alt="logo" width="153" height="44" />
+                            {/* <h1 style={{
                                 fontSize: '2rem',
                                 margin: '0',
                                 padding: '0',
                                 fontWeight: 'bolder',
                                 textDecoration: 'underline'
-                            }}>Game Ready Gear</h1>
+                            }}>Game Ready Gear</h1> */}
                         </ALink>
 
                         <SearchForm />
