@@ -53,7 +53,7 @@ function Order( props ) {
                         </div>
                         <div className="overview-item">
                             <span>Date:</span>
-                            <strong>November 20, 2020</strong>
+                            <strong>June 10, 2024</strong>
                         </div>
                         <div className="overview-item">
                             <span>Email:</span>
@@ -61,7 +61,7 @@ function Order( props ) {
                         </div>
                         <div className="overview-item">
                             <span>Total:</span>
-                            <strong>${ toDecimal( getTotalPrice( cartList ) ) }</strong>
+                            <strong>&euro;{ toDecimal( getTotalPrice( cartList ) ) }</strong>
                         </div>
                         <div className="overview-item">
                             <span>Payment method:</span>
@@ -85,14 +85,14 @@ function Order( props ) {
                                     cartList.map( item =>
                                         <tr key={ 'order-' + item.name }>
                                             <td className="product-name">{ item.name } <span> <i className="fas fa-times"></i> { item.qty }</span></td>
-                                            <td className="product-price">${ toDecimal( item.qty * item.price ) }</td>
+                                            <td className="product-price">&euro;{ toDecimal( item.qty * item.price ) }</td>
                                         </tr>
                                     ) }
                                 <tr className="summary-subtotal">
                                     <td>
                                         <h4 className="summary-subtitle">Subtotal:</h4>
                                     </td>
-                                    <td className="summary-subtotal-price">${ toDecimal( getTotalPrice( cartList ) ) }</td>
+                                    <td className="summary-subtotal-price">&euro;{ toDecimal( getTotalPrice( cartList ) ) }</td>
                                 </tr>
                                 <tr className="summary-subtotal">
                                     <td>
@@ -111,13 +111,13 @@ function Order( props ) {
                                         <h4 className="summary-subtitle">Total:</h4>
                                     </td>
                                     <td>
-                                        <p className="summary-total-price">${ toDecimal( getTotalPrice( cartList ) ) }</p>
+                                        <p className="summary-total-price">&euro;{ toDecimal( getTotalPrice( cartList ) ) }</p>
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
-                    <h2 className="title title-simple text-left pt-10 mb-2">Billing Address</h2>
+                    {/* <h2 className="title title-simple text-left pt-10 mb-2">Billing Address</h2>
                     <div className="address-info pb-8 mb-6">
                         <p className="address-detail pb-2">
                             John Doe<br />
@@ -127,7 +127,7 @@ function Order( props ) {
                         123456789
                     </p>
                         <p className="email">mail@riode.com</p>
-                    </div>
+                    </div> */}
 
                     <ALink href="/shop" className="btn btn-icon-left btn-dark btn-back btn-rounded btn-md mb-4"><i className="d-icon-arrow-left"></i> Back to List</ALink>
                 </div>

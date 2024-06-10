@@ -41,7 +41,7 @@ root.render(
           <Route path="/pages/checkout" element={<Layout children={<Checkout/>}/>} />
           <Route path="/pages/blogsTest" element={<Layout children={<BlogPosts/>}/>} />
           <Route path="/pages/testForm" element={<Layout children={<DynamicForm/>}/>} />
-          {/* <Route path="/pages/order" element={<Layout children={<Order/>}/>} /> */}
+          <Route path="/pages/order" element={<Layout children={<Order/>}/>} />
           <Route path="*" element={<Layout children={<Error404/>} />} />
           {/* <wrapper/> */}
         </Routes>
