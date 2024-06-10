@@ -11,9 +11,8 @@ function DynamicProductVarient(props) {
         console.log(selectedFilters)
         handelMasterdata(unchangedData);
         setFilterDataToProductDetail();
-    }
+    } 
     const handelMasterdata =(unchangedData)=>{
-        
     }
     const setFilterDataToProductDetail = () => {
         var selectedReqFilters = 0;

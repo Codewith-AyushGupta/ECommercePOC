@@ -106,18 +106,7 @@
               "fieldType": "picklist",
               "entries": ["Red", "Black"],
               "isRequried": true
-          },
-          {
-              "name": "Size",
-              "fieldType": "picklist",
-              "entries": ["S", "L", "XL", "XXL"],
-              "isRequried": true
-          },
-          {
-            "name": "Msg",
-            "fieldType": "text",
-            "isRequried": false
-        }
+          }
       ]
   }
 }

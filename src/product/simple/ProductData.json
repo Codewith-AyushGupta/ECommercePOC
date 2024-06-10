@@ -114,18 +114,7 @@
             "fieldType":"picklist",
             "entries":["Red","Black"],
             "isRequried":true
-          },
-          {
-            "name":"Size",
-            "fieldType":"picklist",
-            "entries":["S","L","XL","XXL"],
-            "isRequried":true
-          },
-          {
-            "name":"inSole",
-            "fieldType":"picklist",
-            "entries":["Normal","Membrane"],
-            "isRequried":false
-          }]
+          }
+          ]
     }
 }

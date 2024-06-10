@@ -62,7 +62,7 @@ const DetailOne = React.memo((props)=> {
         }
     }, [ product ] )
     const wishlistHandler = ( e ) => {
-        debugger;
+        // debugger;
         e.preventDefault();
 
         if ( toggleWishlist && !isWishlisted ) {
@@ -81,7 +81,7 @@ const DetailOne = React.memo((props)=> {
 
 
     const addToCartHandler = () => {
-        debugger;
+        // debugger;
         if(!cartActive){
             alert('Select the Req Filters')
         }
@@ -243,7 +243,7 @@ const DetailOne = React.memo((props)=> {
                                     </div>
                                 </div> : ""
                         }  */} 
-                        {/* <DynamicProductVarient productDetail={product} getFilterData={HandelFilterData}/> */}
+                        <DynamicProductVarient productDetail={product} getFilterData={HandelFilterData}/>
                         <div className='product-variation-price'>
                             <Collapse in={ cartActive && curIndex > -1 }>
                                 <div className="card-wrapper">
