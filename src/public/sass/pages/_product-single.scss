@@ -609,6 +609,32 @@ aside {
         }
     }
     .product-tab-additional label { min-width: 13rem; }
+    //////////// Add by Ayush ///////////
+    .fixed-cart-footer-for-mobile {
+        position: fixed;
+        bottom: 9vh;
+        z-index: 1000;
+        width: 100%;
+        background: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 11vh;
+        border-top: 1px solid;
+        padding: 0 10px;
+        box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+        left: 0;
+        right: 0;
+    }
+    .product-form .btn-cart{
+        max-width: 38.0rem;
+    }
+    .forDesktopOnly{
+        display: flex !important;
+    }   
+}
+.forDesktopOnly{
+    display: none;
 }
 @include mq(sm) {
     .product-tab-size-guide {

@@ -6,10 +6,11 @@ import { modalActions } from '../store/modalReducer';
 import { toDecimal } from '../utils';
 
 function decsOne(props) {
-    const { product, isGuide = true, isDivider = true, openModal } = props;
+    var { product, isGuide = true, isDivider = true, openModal } = props;
 
     let colors = [], sizes = [];
-
+    product = product.Data;
+    // debugger;
     if ( product.data.variants.length > 0 ) {
         if ( product.data.variants[ 0 ].size )
             product.data.variants.forEach( item => {

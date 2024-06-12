@@ -114,6 +114,12 @@
             "fieldType":"picklist",
             "entries":["Red","Black"],
             "isRequried":true
+          },
+          {
+            "name":"msg",
+            "fieldType":"text",
+            "entries":["Red","Blck"],
+            "isRequried":true
           }
           ]
     }

@@ -68,10 +68,21 @@ function StickyFooter() {
                 <i className="d-icon-layer"></i>
                 <span>Blogs</span>
             </ALink>
-            <ALink href="/pages/account" className="sticky-link">
+            {/* <ALink href="/pages/account" className="sticky-link">
                 <i className="d-icon-user"></i>
                 <span>Account</span>
+            </ALink> */}
+            <ALink href="/pages/cart" className="sticky-link">
+                <i className="d-icon-bag"></i>
+                <span>Cart</span>
             </ALink>
+             {/* <a href="#" className="cart-toggle label-block link" onClick={showCartMenu}>
+                <div className="cart-label d-lg-show">
+                    <span className="cart-name">Shopping Cart:</span>
+                    <span className="cart-price">&euro;{toDecimal(getTotalPrice(cartList))}</span>
+                </div>
+                <i className="d-icon-bag"><span className="cart-count">{getCartCount(cartList)}</span></i>
+            </a> */}
             <FooterSearchBox />
         </div>
     );

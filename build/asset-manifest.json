@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.b2de5d93.css",
-    "main.js": "/static/js/main.438ca3b7.js",
+    "main.css": "/static/css/main.95169f6b.css",
+    "main.js": "/static/js/main.56568327.js",
     "static/js/845.5e3604d0.chunk.js": "/static/js/845.5e3604d0.chunk.js",
     "static/media/1.png": "/static/media/1.060d7ecd56db7e0b078e.png",
     "static/media/2.jpg": "/static/media/2.ab2df753d953901ce87c.jpg",
@@ -18,12 +18,12 @@
     "static/media/404.png": "/static/media/404.b299395579cc09551dfa.png",
     "static/media/GameReadyGear - White Orange.webp": "/static/media/GameReadyGear - White Orange.4850830a09a54fe2fc54.webp",
     "index.html": "/index.html",
-    "main.b2de5d93.css.map": "/static/css/main.b2de5d93.css.map",
-    "main.438ca3b7.js.map": "/static/js/main.438ca3b7.js.map",
+    "main.95169f6b.css.map": "/static/css/main.95169f6b.css.map",
+    "main.56568327.js.map": "/static/js/main.56568327.js.map",
     "845.5e3604d0.chunk.js.map": "/static/js/845.5e3604d0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b2de5d93.css",
-    "static/js/main.438ca3b7.js"
+    "static/css/main.95169f6b.css",
+    "static/js/main.56568327.js"
   ]
 }
